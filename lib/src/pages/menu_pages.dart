@@ -33,7 +33,7 @@ class MenuPage extends StatelessWidget {
     return RaisedButton(
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 80.0, vertical: 15.0),
-        child: Text("Factura"),
+        child: Text("Nota de Venta"),
       ),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
       elevation: 0.0,

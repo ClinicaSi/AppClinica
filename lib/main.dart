@@ -1,6 +1,7 @@
 import 'package:clinica/src/bloc/provider.dart';
 import 'package:clinica/src/pages/home_trata_pages.dart';
 import 'package:clinica/src/pages/menu_pages.dart';
+import 'package:clinica/src/pages/print_page.dart';
 import 'package:clinica/src/pages/producto_page.dart';
 import 'package:clinica/src/pages/tratamiento_pages.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Material App',
-        initialRoute: 'login',
+        initialRoute: 'menu',
         routes: {
           'login': (BuildContext context) => LoginPage(),
           'home': (BuildContext context) => HomePage(),
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
           'menu': (BuildContext context) => MenuPage(),
           'producto': (BuildContext context) => Productopage(),
           'tratamientos': (BuildContext context) => TrataMientoPages(),
+          "imprimir": (BuildContext context) => Print(),
         },
         theme: ThemeData(primaryColor: Colors.deepPurple),
       ),

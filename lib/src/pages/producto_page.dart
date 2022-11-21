@@ -64,6 +64,7 @@ class _ProductopageState extends State<Productopage> {
                 Divider(),
                 _crearBoton(),
                 Divider(),
+                _crearBotonPrint(),
                 Text("$currentDate")
               ],
             ),
@@ -185,6 +186,21 @@ class _ProductopageState extends State<Productopage> {
       textColor: Colors.white,
       color: Colors.deepPurple,
       onPressed: (_guardando) ? null : _sumit,
+    );
+  }
+
+  Widget _crearBotonPrint() {
+    return RaisedButton.icon(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20.0),
+      ),
+      label: Text("Imprimir"),
+      icon: Icon(Icons.print),
+      textColor: Colors.white,
+      color: Colors.deepPurple,
+      onPressed: () {
+        Navigator.pushNamed(context, 'imprimir');
+      },
     );
   }
 
